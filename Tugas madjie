@@ -1,0 +1,25 @@
+# Program Menghitung Rata-Rata Nilai Mata Kuliah (Input Manual)
+
+print("==========================================")
+print("     PROGRAM MENCARI RATA-RATA NILAI      ")
+print("==========================================")
+print("PRODI ILMU KOMPUTER FIKOM UN METRO")
+print("NAMA MAHASISWA : ZAKIAH AHMAD")
+print("NPM            : 2300101010")
+print("KELAS          : B")
+print("------------------------------------------")
+
+# Input jumlah mata kuliah
+jumlah_makul = int(input("Jumlah Makul: "))
+nilai = []
+
+# Input nilai-nilai tiap mata kuliah
+for i in range(jumlah_makul):
+    nilai_makul = float(input(f"Nilai Makul {i+1} : "))
+    nilai.append(nilai_makul)
+
+# Hitung rata-rata
+rata_rata = sum(nilai) / jumlah_makul
+
+print("------------------------------------------")
+print(f"Nilai Rata-rata : {rata_rata:.1f}")
